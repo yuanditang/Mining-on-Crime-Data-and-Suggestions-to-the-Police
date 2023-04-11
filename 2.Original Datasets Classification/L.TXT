@@ -1,0 +1,70 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     newdata-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    1994
+Attributes:   7
+              PctUnemployed
+              PctImmigRec5
+              TotalPctDiv
+              PopDens
+              PctLess9thGrade
+              medIncome
+              levelofcrime
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                     Class
+Variable               Low
+==========================
+PctUnemployed      -0.2079
+PctImmigRec5        -0.023
+TotalPctDiv        -0.4209
+PopDens            -0.0001
+PctLess9thGrade    -0.0707
+medIncome               -0
+Intercept           7.6704
+
+
+Odds Ratios...
+                     Class
+Variable               Low
+==========================
+PctUnemployed       0.8123
+PctImmigRec5        0.9772
+TotalPctDiv         0.6564
+PopDens             0.9999
+PctLess9thGrade     0.9317
+medIncome                1
+
+
+Time taken to build model: 0.05 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1566               78.5356 %
+Incorrectly Classified Instances       428               21.4644 %
+Kappa statistic                          0.5702
+Mean absolute error                      0.2978
+Root mean squared error                  0.3861
+Relative absolute error                 59.641  %
+Root relative squared error             77.2723 %
+Total Number of Instances             1994     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.792    0.222    0.794      0.792    0.793      0.570    0.864     0.872     Low
+                 0.778    0.208    0.777      0.778    0.777      0.570    0.864     0.842     High
+Weighted Avg.    0.785    0.215    0.785      0.785    0.785      0.570    0.864     0.858     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 819 215 |   a = Low
+ 213 747 |   b = High
+

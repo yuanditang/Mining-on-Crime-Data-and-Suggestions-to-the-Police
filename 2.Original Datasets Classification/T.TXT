@@ -1,0 +1,137 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     newdata-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    1994
+Attributes:   7
+              PctUnemployed
+              PctImmigRec5
+              TotalPctDiv
+              PopDens
+              PctLess9thGrade
+              medIncome
+              levelofcrime
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+REPTree
+============
+
+TotalPctDiv < 10.57
+|   PctUnemployed < 5.29 : Low (394/39) [174/20]
+|   PctUnemployed >= 5.29
+|   |   PctLess9thGrade < 21.27
+|   |   |   TotalPctDiv < 8.41
+|   |   |   |   PctLess9thGrade < 3.45 : Low (13/0) [7/0]
+|   |   |   |   PctLess9thGrade >= 3.45
+|   |   |   |   |   PctImmigRec5 < 3.96 : Low (8/0) [10/0]
+|   |   |   |   |   PctImmigRec5 >= 3.96
+|   |   |   |   |   |   PctImmigRec5 < 9.62 : High (6/2) [5/3]
+|   |   |   |   |   |   PctImmigRec5 >= 9.62
+|   |   |   |   |   |   |   PctImmigRec5 < 20.45 : Low (17/0) [8/2]
+|   |   |   |   |   |   |   PctImmigRec5 >= 20.45
+|   |   |   |   |   |   |   |   TotalPctDiv < 7.25 : Low (14/1) [4/1]
+|   |   |   |   |   |   |   |   TotalPctDiv >= 7.25
+|   |   |   |   |   |   |   |   |   PopDens < 8892.4
+|   |   |   |   |   |   |   |   |   |   PctUnemployed < 6.03 : Low (3/1) [5/1]
+|   |   |   |   |   |   |   |   |   |   PctUnemployed >= 6.03 : High (5/0) [6/2]
+|   |   |   |   |   |   |   |   |   PopDens >= 8892.4 : Low (5/0) [0/0]
+|   |   |   TotalPctDiv >= 8.41
+|   |   |   |   PctImmigRec5 < 13.8 : Low (36/6) [21/6]
+|   |   |   |   PctImmigRec5 >= 13.8
+|   |   |   |   |   PctLess9thGrade < 6.3 : High (13/1) [6/6]
+|   |   |   |   |   PctLess9thGrade >= 6.3
+|   |   |   |   |   |   PctImmigRec5 < 39.03 : High (44/18) [21/7]
+|   |   |   |   |   |   PctImmigRec5 >= 39.03 : Low (6/0) [1/0]
+|   |   PctLess9thGrade >= 21.27 : High (35/5) [16/2]
+TotalPctDiv >= 10.57
+|   PctLess9thGrade < 7.78
+|   |   PctLess9thGrade < 3.48
+|   |   |   TotalPctDiv < 13.24 : Low (34/0) [20/4]
+|   |   |   TotalPctDiv >= 13.24
+|   |   |   |   PopDens < 4610.2
+|   |   |   |   |   PctLess9thGrade < 2.35 : Low (4/0) [1/0]
+|   |   |   |   |   PctLess9thGrade >= 2.35
+|   |   |   |   |   |   PctUnemployed < 3.77 : High (4/0) [2/0]
+|   |   |   |   |   |   PctUnemployed >= 3.77 : Low (9/3) [3/0]
+|   |   |   |   PopDens >= 4610.2 : High (3/0) [2/1]
+|   |   PctLess9thGrade >= 3.48
+|   |   |   TotalPctDiv < 15.8
+|   |   |   |   TotalPctDiv < 11.81
+|   |   |   |   |   PctImmigRec5 < 14.73 : Low (27/5) [10/4]
+|   |   |   |   |   PctImmigRec5 >= 14.73
+|   |   |   |   |   |   PctImmigRec5 < 33.12 : High (38/17) [16/6]
+|   |   |   |   |   |   PctImmigRec5 >= 33.12 : Low (8/1) [4/2]
+|   |   |   |   TotalPctDiv >= 11.81
+|   |   |   |   |   PctImmigRec5 < 7.95 : Low (6/1) [5/1]
+|   |   |   |   |   PctImmigRec5 >= 7.95
+|   |   |   |   |   |   PctUnemployed < 9.27
+|   |   |   |   |   |   |   PctUnemployed < 3.16 : Low (9/3) [3/1]
+|   |   |   |   |   |   |   PctUnemployed >= 3.16
+|   |   |   |   |   |   |   |   PctUnemployed < 3.64 : High (8/0) [1/1]
+|   |   |   |   |   |   |   |   PctUnemployed >= 3.64
+|   |   |   |   |   |   |   |   |   PctImmigRec5 < 37.68 : High (93/28) [48/14]
+|   |   |   |   |   |   |   |   |   PctImmigRec5 >= 37.68 : Low (3/0) [5/2]
+|   |   |   |   |   |   PctUnemployed >= 9.27 : Low (2/0) [0/0]
+|   |   |   TotalPctDiv >= 15.8 : High (18/0) [8/0]
+|   PctLess9thGrade >= 7.78
+|   |   PctImmigRec5 < 19.21
+|   |   |   TotalPctDiv < 13.21
+|   |   |   |   PctUnemployed < 6.6
+|   |   |   |   |   medIncome < 24489.5 : High (10/3) [7/2]
+|   |   |   |   |   medIncome >= 24489.5 : Low (28/9) [13/3]
+|   |   |   |   PctUnemployed >= 6.6
+|   |   |   |   |   PctUnemployed < 7.47
+|   |   |   |   |   |   PopDens < 499.1 : Low (2/1) [3/1]
+|   |   |   |   |   |   PopDens >= 499.1 : High (17/0) [7/1]
+|   |   |   |   |   PctUnemployed >= 7.47
+|   |   |   |   |   |   medIncome < 25756.5
+|   |   |   |   |   |   |   PctLess9thGrade < 14.43
+|   |   |   |   |   |   |   |   PopDens < 3467.45
+|   |   |   |   |   |   |   |   |   medIncome < 19741 : High (5/2) [4/0]
+|   |   |   |   |   |   |   |   |   medIncome >= 19741 : Low (11/1) [7/1]
+|   |   |   |   |   |   |   |   PopDens >= 3467.45 : High (3/0) [5/3]
+|   |   |   |   |   |   |   PctLess9thGrade >= 14.43 : High (19/4) [7/1]
+|   |   |   |   |   |   medIncome >= 25756.5 : High (11/1) [5/0]
+|   |   |   TotalPctDiv >= 13.21 : High (69/10) [40/9]
+|   |   PctImmigRec5 >= 19.21
+|   |   |   PopDens < 3200.75
+|   |   |   |   TotalPctDiv < 12.38
+|   |   |   |   |   PopDens < 1194.1
+|   |   |   |   |   |   PctUnemployed < 5.35 : Low (5/0) [3/1]
+|   |   |   |   |   |   PctUnemployed >= 5.35 : High (13/5) [5/1]
+|   |   |   |   |   PopDens >= 1194.1 : High (40/6) [23/10]
+|   |   |   |   TotalPctDiv >= 12.38 : High (127/11) [76/12]
+|   |   |   PopDens >= 3200.75 : High (104/3) [48/7]
+
+Size of the tree : 87
+
+Time taken to build model: 0.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1524               76.4293 %
+Incorrectly Classified Instances       470               23.5707 %
+Kappa statistic                          0.5285
+Mean absolute error                      0.3074
+Root mean squared error                  0.4144
+Relative absolute error                 61.5568 %
+Root relative squared error             82.9422 %
+Total Number of Instances             1994     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.756    0.227    0.782      0.756    0.769      0.529    0.820     0.803     Low
+                 0.773    0.244    0.746      0.773    0.759      0.529    0.820     0.773     High
+Weighted Avg.    0.764    0.235    0.765      0.764    0.764      0.529    0.820     0.789     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 782 252 |   a = Low
+ 218 742 |   b = High
+

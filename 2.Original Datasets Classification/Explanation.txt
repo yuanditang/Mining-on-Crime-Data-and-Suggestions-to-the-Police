@@ -1,0 +1,9 @@
+CLASSIFY ON THE INITIAL DATASET USING
+
+K: KNN
+T: TREE
+S: Sequential minimal optimization
+L: LOGISTIC
+B: NAIVE BAYES
+
+

@@ -1,0 +1,67 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     newdata-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    1994
+Attributes:   7
+              PctUnemployed
+              PctImmigRec5
+              TotalPctDiv
+              PopDens
+              PctLess9thGrade
+              medIncome
+              levelofcrime
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: Low, High
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         3.2095 * (normalized) PctUnemployed
+ +       1.3435 * (normalized) PctImmigRec5
+ +       5.0882 * (normalized) TotalPctDiv
+ +       2.9032 * (normalized) PopDens
+ +       2.8581 * (normalized) PctLess9thGrade
+ +       0.4429 * (normalized) medIncome
+ -       4.3675
+
+Number of kernel evaluations: 55951 (61.593% cached)
+
+
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1561               78.2849 %
+Incorrectly Classified Instances       433               21.7151 %
+Kappa statistic                          0.5657
+Mean absolute error                      0.2172
+Root mean squared error                  0.466 
+Relative absolute error                 43.4901 %
+Root relative squared error             93.2632 %
+Total Number of Instances             1994     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.772    0.205    0.802      0.772    0.787      0.566    0.783     0.737     Low
+                 0.795    0.228    0.764      0.795    0.779      0.566    0.783     0.706     High
+Weighted Avg.    0.783    0.216    0.784      0.783    0.783      0.566    0.783     0.722     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 798 236 |   a = Low
+ 197 763 |   b = High
+

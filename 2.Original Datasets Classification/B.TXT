@@ -1,0 +1,88 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     newdata-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    1994
+Attributes:   7
+              PctUnemployed
+              PctImmigRec5
+              TotalPctDiv
+              PopDens
+              PctLess9thGrade
+              medIncome
+              levelofcrime
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                       Class
+Attribute                Low       High
+                      (0.52)     (0.48)
+========================================
+PctUnemployed
+  mean                 4.8604     7.2773
+  std. dev.            2.0453     2.8073
+  weight sum             1034        960
+  precision            0.0272     0.0272
+
+PctImmigRec5
+  mean                18.4416    23.3989
+  std. dev.           12.9656    11.2416
+  weight sum             1034        960
+  precision            0.0499     0.0499
+
+TotalPctDiv
+  mean                 9.3401    12.5316
+  std. dev.             2.647     2.3913
+  weight sum             1034        960
+  precision            0.0172     0.0172
+
+PopDens
+  mean              2223.3642  3400.2552
+  std. dev.         1923.9817  3605.2967
+  weight sum             1034        960
+  precision           22.6769    22.6769
+
+PctLess9thGrade
+  mean                 6.9247    12.1574
+  std. dev.            5.0518     7.4524
+  weight sum             1034        960
+  precision             0.041      0.041
+
+medIncome
+  mean             39015.7981 27973.1227
+  std. dev.        14694.8537  8747.7494
+  weight sum             1034        960
+  precision           57.9664    57.9664
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1537               77.0812 %
+Incorrectly Classified Instances       457               22.9188 %
+Kappa statistic                          0.54  
+Mean absolute error                      0.2548
+Root mean squared error                  0.4126
+Relative absolute error                 51.0261 %
+Root relative squared error             82.5737 %
+Total Number of Instances             1994     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.807    0.268    0.764      0.807    0.785      0.541    0.849     0.858     Low
+                 0.732    0.193    0.779      0.732    0.755      0.541    0.849     0.811     High
+Weighted Avg.    0.771    0.232    0.771      0.771    0.770      0.541    0.849     0.835     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 834 200 |   a = Low
+ 257 703 |   b = High
+
